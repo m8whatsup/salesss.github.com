@@ -1,0 +1,128 @@
+body { 
+	padding: 0px; 
+	margin: 0px; 
+}
+body * { 
+	font-family: Arial; 
+}
+h1, h2, h3 { 
+	font-weight: normal; 
+	margin: 0px; 
+}
+h1 { 
+	font-size: 27px; 
+}
+a { 
+	color: rgb(186, 0, 9); 
+}
+a:hover { 
+	text-decoration: none; 
+	color: rgb(255, 0, 0); 
+}
+.header {
+	position: relative;
+}
+.header h2 {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	color: #fff;
+	font-size: 45px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.wrap { 
+	max-width: 700px; 
+	min-width: 240px; 
+	margin: 0px auto; 
+}
+body img { 
+	max-width: 100%; 
+}
+.gif {
+	float: left;
+	margin-right: 10px;
+}
+.content { 
+	width: 100%; 
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%; 
+}
+.post { 
+	padding: 15px 10px; 
+	font-size: 17px; }
+.post .info { 
+	color: rgb(153, 153, 153); 
+	font-size: 11px; 
+	font-style: italic; 
+}
+.post a { 
+	font-size: 19px; 
+}
+
+.vk-avatar img {
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+}
+.vk-comment, .vk-comment-load { 
+	margin-bottom: 15px;
+	position: relative; 
+	border-bottom: 1px solid rgb(218, 225, 232); 
+	padding: 0 10px;
+	padding-bottom: 15px; 
+}
+.vk-comment-name { 
+	color: rgb(43, 88, 122); 
+	font-weight: bold; 
+	font-size: 12px; 
+}
+.vk-comment-text { 
+	margin-left: 60px; 
+}
+.vk-comment-text img {
+	max-height: 400px;
+}
+.vk-comment-date {
+	margin-left: 60px;
+	color: rgb(153, 153, 153);
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 999px) {
+  .vk-comment-name { 
+  	color: rgb(43, 88, 122); 
+  	font-weight: bold; 
+  	font-size: 18px; 
+  }
+}
+@media screen and (max-width: 319px) {
+  .vk-comment-name { 
+  	color: rgb(43, 88, 122); 
+  	font-weight: bold; 
+  	font-size: 15px; 
+  }
+}
+@media screen and (max-width: 650px) {
+	.header h2 {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.gif {
+		float: none;
+		display: block;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.vk-avatar img {
+		width: 40px;
+	}
+	.vk-comment-name {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.vk-comment-text, .vk-comment-date {
+		margin-left: 0;
+	}
+}
